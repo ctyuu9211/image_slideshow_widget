@@ -66,18 +66,19 @@ body {
 }
 
 .buttons button {
-  border: 2px solid #e5ebf3;
+  border: none;              /* removes the circle outline */
   background-color: transparent;
   color: #e5ebf3;
   cursor: pointer;
-  padding: 13px 15px;
-  border-radius: 50%;
+  padding: 10px;             /* optional: tighten spacing */
+  border-radius: 0;          /* removes circular shape */
   outline: none;
 }
 
 .buttons button:hover {
-  background-color: #e5ebf3;
-  color: #362a2b;
+  background-color: transparent; /* remove fill on hover */
+  color: #ffffff;                /* slightly brighter arrow */
+  transform: scale(1.2);         /* nice hover pop */
 }
 
 @media (min-width: 640px) and (min-height: 640px) {
