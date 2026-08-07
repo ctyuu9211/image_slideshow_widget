@@ -53,12 +53,6 @@ body {
     center top/cover;
 }
 
-.slide:nth-child(3) {
-  background: url("3.png") no-repeat
-    center top/cover;
-}
-
-
 .buttons button#prev {
   position: absolute;
   top: 50%;
@@ -112,7 +106,6 @@ body {
   <div class="slider">
     <div class="slide current"></div>
     <div class="slide"></div>
-    <div class="slide"></div>
 
   </div>
   <div class="buttons">
@@ -121,7 +114,7 @@ body {
   </div>
   <!-- partial -->
   <script>
-    const slides = document.querySelectorAll(".slide");
+    const slides = document.querySelectorAll(".slider .slide");
     const nextButton = document.getElementById("next");
     const prevButton = document.getElementById("prev");
     const auto = true;
